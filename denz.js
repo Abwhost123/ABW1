@@ -974,6 +974,10 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 🌹${prefix}delrespon <nama>
 🌹${prefix}q <reply message>
 
+♧ BELAJAR MENU ♧
+
+🌺 ${prefix}brainly
+
 ꪶ𖣂ꫂ‎‎‎ 𝑾𝑨𝑹 𝑴𝑬𝑵𝑼 ꪶ𖣂ꫂ‎‎‎
 
 🌹${prefix}virtex
@@ -1183,7 +1187,15 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 •𝑹𝒆𝒄𝒐𝒅𝒆 @ariBagus`
                   buffer = ofrply
                   denz.sendMessage(from, buffer, image, {caption: menu, thumbnail: fs.readFileSync('./thub.jpg'), quoted: ftrol, contextInfo:{ "forwardingScore":999,"isForwarded":true, "mentionedJid": [SadGril,ptod,dtod,otod,stod],"externalAdReply": {"title": `Hai Kak ${pushname}👋🏻`, mediaType: 2, "thumbnailUrl": "https://telegra.ph/file/6b0259fd741e108910fbe.jpg","previewType": "VIDEO","mediaUrl": `https://youtu.be/rb-s_oRL5Ww`}}})
-                  break                                       
+                  break          
+		case 'brainly':
+			    	if (!isElite) return reply(mess.only.userB)
+			        if (isLimit(sender)) return
+			        await limitAdd(sender)  
+			    	anu = await fetchJson(`https://xteam.xyz/brainly?soal=${body.slice(9)}&APIKEY=0e6e5fc51d43de7e`)
+			    	anu1 = `➻ *JAWABAN* : ${anu.jawaban}`
+			    	reply(anu1)
+			    	break
           //Hardianto nsfw
           case 'yuri':
                     if (!isGroup) return fakeitem(mess.only.group)
