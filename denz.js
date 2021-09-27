@@ -874,7 +874,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 🔖 _${timeWita} Wita_ ⏰
 🔖 _${timeWit} Wit_ ⏰`   
                         
-        buttons = [{buttonId: `${prefix}meu`,buttonText:{displayText: '🚦ALL MENU BOT'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'👑 OWNER'},type:1},{buttonId: `${prefix}sc`,buttonText:{displayText: '📋 SCRIPT'},type:1}]
+        buttons = [{buttonId: `${prefix}meu`,buttonText:{displayText: '🚦ALL MENU BOT'},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'👑 OWNER'},type:1},{buttonId: `${prefix}sc`,buttonText:{displayText: '📋 SCRIPT'},type:1},{buttonId: `${prefix}sos`,buttonText:{displayText: '🔰SOSMED'},type:1}]
    
         imageMsg = (await denz.prepareMessageMedia(fs.readFileSync(`./denz.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./thub.jpg`)})).imageMessage
 
@@ -3031,6 +3031,10 @@ fakeitem(stamtus)
 break
                 case 'sc':
                 teks = `𝑩𝒐𝒕 𝒊𝒏𝒊 𝒎𝒆𝒏𝒈𝒈𝒖𝒏𝒂𝒌𝒂𝒏 𝑺𝒄𝒓𝒊𝒑𝒕 𝒋𝒆𝒎𝒃𝒐𝒕 𝒌𝒐𝒏𝒕𝒐𝒍 𝒍𝒖`
+                fakeitem(teks)
+                break
+			case 'sos':
+                teks = `wa.me/6285230628605`
                 fakeitem(teks)
                 break
 				case 'tobc':
