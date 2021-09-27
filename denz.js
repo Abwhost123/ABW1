@@ -663,8 +663,8 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 			if (budy == 'Tq') {
 				fakeitem(`Sama sama, Semoga Harimu Menyenangkan :)`)
 			}
-			if (budy == 'tq') {
-				fakeitem(`Sama sama, Semoga Harimu Menyenangkan :)`)
+			if (budy == 'su') {
+				fakeitem(`BABI LU NAPA ANJING`)
 			}
 			for (let anjh of imagi){
 				if (budy === anjh){
