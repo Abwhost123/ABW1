@@ -2030,21 +2030,7 @@ kant += `*Judul* : ${i.title}
 var akhir = kant.trim()
 fakeitem(akhir)
 break
-			case 'quran':  
-                   if (!isElite) return reply(mess.only.userB)
-			       if (isLimit(sender)) return
-			       await limitAdd(sender)	
-                   anu = await fetchJson(`https://api.zeks.xyz/api/randomquran`)
-                   anu1 = `➻ *ASMA* : ${anu.result.asma}\n`
-                   anu1 += `➻ *ARTI* : ${anu.result.arti}\n`
-                   anu1 += `➻ *AYAT* : ${anu.result.ayat}\n`
-                   anu1 += `➻ *NOMOR* : ${anu.result.nomor}\n`
-                   anu1 += `➻ *RUKUK* : ${anu.result.rukuk}\n`
-                   anu1 += `➻ *TYPE* : ${anu.result.type}\n`
-                   anu1 += `➻ *URUT* : ${anu.result.urut}\n`                                                                            
-                   anu1 += `➻ *KETERANGAN* : ${anu.result.keterangan}\n`
-                   reply(anu1)
-                   break
+			
 case 'wiki':
 if (args.length < 1) return fakeitem(' Yang Mau Di Cari Apa? ')
 teks = args.join(' ')
