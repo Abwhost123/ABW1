@@ -13,6 +13,7 @@ npm install hxz-api
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 npm install
 npm audit fix
+npm start
 
 #!/usr/bin/bash
 
